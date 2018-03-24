@@ -1,6 +1,6 @@
 {
   "name": "happy-optimism",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "react ui框架",
   "main": "index.js",
   "scripts": {
