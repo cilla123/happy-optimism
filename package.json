@@ -1,0 +1,30 @@
+{
+  "name": "happy-optimism",
+  "version": "0.0.1",
+  "description": "react ui框架",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cilla123/happy-optimism.git"
+  },
+  "author": "Ben赖珏豪",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cilla123/happy-optimism/issues"
+  },
+  "homepage": "https://github.com/cilla123/happy-optimism#readme",
+  "dependencies": {
+    "@types/react": "^16.0.40",
+    "@types/react-dom": "^16.0.4",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^4.0.1",
+    "source-map-loader": "^0.2.3",
+    "typescript": "^2.7.2"
+  }
+}
