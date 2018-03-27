@@ -2,3 +2,14 @@ node_modules/
 package-lock.json
 .cache
 dist/
+
+assets
+coverage
+es
+lib
+_book
+.idea
+.DS_Store
+.temp
+*.log
+npm-debug.*

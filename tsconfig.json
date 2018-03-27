@@ -1,13 +1,25 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
-    "sourceMap": true,
-    "noImplicitAny": true,
-    "module": "commonjs",
-    "target": "es5",
-    "jsx": "react"
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es6",
+    "types": [
+      "classnames",
+      "react",
+      "react-dom"
+    ]
   },
   "include": [
-    "./src/**/*"
-  ]
+    "components/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "lib",
+    "es"
+  ],
+  "compileOnSave": false
 }
