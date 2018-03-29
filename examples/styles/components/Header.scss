@@ -1,6 +1,64 @@
-@import "../functions/index";
+.page-header {
+  border-bottom: 1px solid #eaeefb;
+}
 
-header {
-  padding: r(15);
-  font-size: r(16);
+.page-header__top {
+  -webkit-box-sizing: border-box;
+  background-color: #fff;
+  box-sizing: border-box;
+  height: 60px;
+  overflow: hidden;
+  padding: 0 40px;
+  position: relative;
+}
+
+@media (min-width: 1440px){
+  .page-header__top {
+      margin: 0 auto;
+      width: 1440px;
+  }
+}
+
+.page-header__logo {
+  float: left;
+  font-size: 0;
+  line-height: 60px;
+}
+
+.page-header__logo img, .page-header__logo span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.page-header__logo img {
+  margin-right: 10px;
+  width: 24px;
+}
+
+.page-header__logo span {
+  color: #333;
+  font-family: Dosis,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+  font-size: 20px;
+}
+
+.page-header__search-sep {
+  background: #bbb;
+  display: inline-block;
+  height: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 1px;
+}
+
+.page-header__navs {
+  float: right;
+}
+
+.page-header__item {
+  float: left;
+  height: 100%;
+}
+
+.page-header__github {
+  margin-top: 16px;
 }
