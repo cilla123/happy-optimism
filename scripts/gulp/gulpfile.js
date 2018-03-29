@@ -28,20 +28,20 @@ gulp.task('dist', () => {
       outputStyle: 'compressed',
     }))
     .pipe(autoprefixer({ browsers }))
-    .pipe(concat('zarm.css'))
+    .pipe(concat('happy-optimism.css'))
     .pipe(size())
     .pipe(gulp.dest(DIR.dist))
     .pipe(sourcemaps.write())
-    .pipe(rename('zarm.css.map'))
+    .pipe(rename('happy-optimism.css.map'))
     .pipe(size())
     .pipe(gulp.dest(DIR.dist))
 
     .pipe(cssnano())
-    .pipe(concat('zarm.min.css'))
+    .pipe(concat('happy-optimism.min.css'))
     .pipe(size())
     .pipe(gulp.dest(DIR.dist))
     .pipe(sourcemaps.write())
-    .pipe(rename('zarm.min.css.map'))
+    .pipe(rename('happy-optimism.min.css.map'))
     .pipe(size())
     .pipe(gulp.dest(DIR.dist));
 });

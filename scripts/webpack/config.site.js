@@ -68,7 +68,7 @@ Object.keys(config.entry).forEach((key) => {
 });
 
 config.resolve.alias = {
-  zarm: process.cwd(),
+  'happy-optimism': process.cwd(),
 };
 
 module.exports = config;

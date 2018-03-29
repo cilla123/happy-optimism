@@ -44,7 +44,7 @@ config.module.rules[0].use[0].options.presets.push('react-hmre');
 config.devServer = {
   publicPath: config.output.publicPath,
   host: '0.0.0.0',
-  port: 3000,
+  port: 8081,
   compress: true,
   noInfo: true,
   inline: true,
@@ -52,7 +52,7 @@ config.devServer = {
 };
 
 config.resolve.alias = {
-  zarm: process.cwd(),
+  'happy-optimism': process.cwd(),
 };
 
 module.exports = config;

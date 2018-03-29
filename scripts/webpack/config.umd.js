@@ -11,13 +11,13 @@ const env = process.env.NODE_ENV;
 config.devtool = 'source-map';
 
 config.entry = {
-  zarm: [
+  'happy-optimism': [
     './components/index.tsx',
   ],
 };
 
 config.output = {
-  library: 'zarm',
+  library: 'happy-optimism',
   libraryTarget: 'umd',
   path: path.join(process.cwd(), 'dist'),
   filename: '[name].js',
