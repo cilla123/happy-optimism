@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
-import '../styles/components/Container';
+// import '../styles/components/Container';
 
 class Container extends Component {
 

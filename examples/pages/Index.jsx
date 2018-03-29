@@ -1,5 +1,5 @@
 import React, { PureComponent, Component } from 'react';
-import '../styles/pages/IndexPage';
+// import '../styles/pages/IndexPage';
 
 class Page extends (PureComponent || Component) {
 
