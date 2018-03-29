@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import '../styles/components/Footer.scss';
 
 class Footer extends Component {
 
@@ -7,8 +6,8 @@ class Footer extends Component {
     return (
       <footer>
         <div className="copyright">
-          <div className="copyright-cn">众安·体验设计中心</div>
-          <div className="copyright-en">Zhongan UX Densign</div>
+          <div className="copyright-cn">Happy·体验设计中心</div>
+          <div className="copyright-en">Happy UI Densign</div>
         </div>
       </footer>
     );

@@ -36,11 +36,11 @@ group: 数据
 | target    | 可选，和href一起使用，就是a标签的target属性 | string | `''`        | `'_blank'`                  |
 | className | 自定义类名                       | string |             |                                    |
 | style     | 自定style                      | object |             |                                    |
-| prefix    | 自定义前缀                       | string | `'zent'`    |                                    |
+| prefix    | 自定义前缀                       | string | `'happy-optimism'`    |                                    |
 #### Button.Group
 
 | 参数        | 说明                          | 类型     | 默认值         | 备选值                                |
 | --------- | --------------------------- | ------ | ----------- | ---------------------------------- |
 | className | 自定义类名                       | string |             |                                    |
 | style     | 自定style                      | object |             |                                    |
-| prefix    | 自定义前缀                       | string | `'zent'`    |   
+| prefix    | 自定义前缀                       | string | `'happy-optimism'`    |   

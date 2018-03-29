@@ -13,7 +13,6 @@ class Header extends Component {
                 <div className="page-header__top">
                     {/* Logo */}
                     <a href="/" className="page-header__logo">
-                        <img src="https://img.yzcdn.cn/public_files/2017/12/18/fd78cf6bb5d12e2a119d0576bedfd230.png" alt="logo" />
                         <span>Happy UI</span>
                     </a>
                     <div className="page-header__search-sep"></div>
@@ -22,7 +21,7 @@ class Header extends Component {
                     <ul className="page-header__navs">
                         <li className="page-header__item">
                             <a href="https://github.com/cilla123/happy-optimism">
-                                <img className="page-header__github" src="https://img.yzcdn.cn/zanui/react/GitHub-Mark-120px-plus.png" alt="github" width="28" height="28" />
+                                <img className="page-header__github" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1522334417164&di=5f954916cd3505684fad4d34e99f4a0c&imgtype=0&src=http%3A%2F%2Fimg2.niushe.com%2Fupload%2F201304%2F19%2F14-22-31-71-26144.jpg" alt="github" width="28" height="28" />
                             </a>
                         </li>
                     </ul>

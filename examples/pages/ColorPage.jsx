@@ -4,7 +4,7 @@ import Colors from '../components/colors'
 const palettes = {
     primary: {
         title: '主色',
-        desc: <p>Zent 默认的主色调是蓝色。</p>,
+        desc: <p>Happy-Optimism 默认的主色调是蓝色。</p>,
     },
     neutral: {
         title: '中性色',
