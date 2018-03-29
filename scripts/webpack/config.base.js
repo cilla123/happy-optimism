@@ -1,6 +1,18 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const browsers = require('../config/browsers');
+const HappyPack = require('happypack');
+const happyThreadPool = require('./happypack-thread-pool');
+
+const {
+  getBabelLoaderOptions,
+  getMarkdownLoaders,
+} = require('./loader.config')
+
+const babelLoader = {
+  loader: 'babel-loader',
+  options: getBabelLoaderOptions({ dev: true }),
+}
 
 module.exports = {
 
@@ -128,5 +140,17 @@ module.exports = {
     extensions: [' ', '.js', '.jsx', '.ts', '.tsx', '.scss'],
   },
 
-  plugins: [],
+  plugins: [
+    new HappyPack({
+      id: 'js',
+      threadPool: happyThreadPool,
+      loaders: [babelLoader],
+    }),
+
+    new HappyPack({
+      id: 'md',
+      threadPool: happyThreadPool,
+      loaders: getMarkdownLoaders(babelLoader),
+    }),
+  ],
 };

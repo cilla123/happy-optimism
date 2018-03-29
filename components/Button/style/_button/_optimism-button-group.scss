@@ -1,0 +1,54 @@
+.happy-optimism-btn-group {
+  display: inline-block;
+
+  .happy-optimism-btn + .happy-optimism-btn {
+    margin-left: -1px;
+  }
+
+  .happy-optimism-btn {
+    position: relative;
+    border-radius: 0;
+
+    &:hover {
+      z-index: 2;
+    }
+
+    &:first-child {
+      border-radius: 2px 0 0 2px;
+    }
+
+    &:last-child {
+      border-radius: 0 2px 2px 0;
+    }
+  }
+
+  .happy-optimism-btn-primary:not(:last-child) {
+    border-right-color: $btn-primary-hover;
+  }
+
+  .happy-optimism-btn-primary:not(:first-child) {
+    border-left-color: $btn-primary-hover;
+  }
+
+  .happy-optimism-btn-danger:not(:last-child) {
+    border-right-color: $btn-danger-hover;
+  }
+
+  .happy-optimism-btn-danger:not(:first-child) {
+    border-left-color: $btn-danger-hover;
+  }
+
+  .happy-optimism-btn-success:not(:last-child) {
+    border-right-color: $btn-success-hover;
+  }
+
+  .happy-optimism-btn-success:not(:first-child) {
+    border-left-color: $btn-success-hover;
+  }
+}
+
+.happy-optimism-btn-group + .happy-optimism-btn-group,
+.happy-optimism-btn-group + .happy-optimism-btn,
+.happy-optimism-btn + .happy-optimism-btn-group {
+  margin-left: 10px;
+}

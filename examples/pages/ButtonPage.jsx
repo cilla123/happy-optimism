@@ -8,8 +8,8 @@ class Page extends Component {
   render() {
     return (
       <div>
-        <Button>414581</Button>
-        按钮页面
+        <Button>按钮</Button>
+        <Button type="success">按钮</Button>        
       </div>
     );
   }
