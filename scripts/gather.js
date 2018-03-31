@@ -43,9 +43,9 @@ const isDir = path => {
 const readFileToString = curry(readFileSync)(__, 'utf8')
 
 function gather() {
-    Object.keys(NAMES).forEach(i18n => {
+    // Object.keys(NAMES).forEach(i18n => {
         
-    })
+    // })
 }
 
 gather()

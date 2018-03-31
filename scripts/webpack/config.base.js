@@ -133,6 +133,12 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.md$/,
+        use: [
+          'markdown-doc-loader'
+        ]
+      }
     ],
   },
 
