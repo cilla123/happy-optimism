@@ -135,9 +135,7 @@ module.exports = {
       },
       {
         test: /\.md$/,
-        use: [
-          'markdown-doc-loader'
-        ]
+        loader: 'babel-loader!react-markdown'
       }
     ],
   },

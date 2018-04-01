@@ -22,6 +22,7 @@
     "classnames": "^2.2.5",
     "lodash": "^4.17.5",
     "normalize.css": "^8.0.0",
+    "react-markdown": "^3.3.0",
     "transliteration": "^1.6.2"
   },
   "devDependencies": {
@@ -33,7 +34,7 @@
     "babel-core": "^6.24.1",
     "babel-eslint": "^8.0.1",
     "babel-jest": "^20.0.3",
-    "babel-loader": "^7.0.0",
+    "babel-loader": "^7.1.4",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-import": "^1.6.2",
     "babel-plugin-transform-runtime": "^6.23.0",
@@ -71,6 +72,7 @@
     "gulp-sourcemaps": "^2.6.1",
     "happypack": "^4.0.1",
     "history": "^4.7.2",
+    "html-loader": "^0.5.5",
     "html-webpack-plugin": "^2.28.0",
     "jest": "^21.2.1",
     "lint-staged": "^4.3.0",

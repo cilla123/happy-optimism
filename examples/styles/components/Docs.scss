@@ -267,13 +267,13 @@ code[class*="language-"] {
   position: relative;
 }
 
-.zandoc-react-container {
-  .zandoc-react-demo {
+.happy-optimism-react-container {
+  .happy-optimism-react-demo {
     border-radius: 4px;
     border: 1px solid $border-color;
     margin: 0 40px;
 
-    & + .zandoc-react-demo {
+    & + .happy-optimism-react-demo {
       margin-top: 40px;
     }
 
@@ -329,10 +329,10 @@ code[class*="language-"] {
   }
 }
 
-.zandoc-react-color-row {
+.happy-optimism-react-color-row {
   margin-bottom: 10px;
 
-  .zandoc-react-color-cell {
+  .happy-optimism-react-color-cell {
     margin-right: 10px;
 
     &:last-child {
@@ -341,7 +341,7 @@ code[class*="language-"] {
   }
 }
 
-.zandoc-react-color-cell {
+.happy-optimism-react-color-cell {
   display: inline-block;
   width: 250px;
   height: 80px;
@@ -350,32 +350,32 @@ code[class*="language-"] {
   box-sizing: border-box;
   font-family: Dosis, Source Sans Pro, Helvetica Neue, Arial, sans-serif;
 
-  .zandoc-react-color-cell__name {
+  .happy-optimism-react-color-cell__name {
     margin-top: 8px;
     font-size: 20px;
   }
 
-  .zandoc-react-color-cell__color {
+  .happy-optimism-react-color-cell__color {
     margin-top: 8px;
     font-size: 14px;
   }
 
   &--light {
-    .zandoc-react-color-cell__name {
+    .happy-optimism-react-color-cell__name {
       color: #fff;
     }
 
-    .zandoc-react-color-cell__color {
+    .happy-optimism-react-color-cell__color {
       color: #e5e5e5;
     }
   }
 
   &--dark {
-    .zandoc-react-color-cell__name {
+    .happy-optimism-react-color-cell__name {
       color: #333;
     }
 
-    .zandoc-react-color-cell__color {
+    .happy-optimism-react-color-cell__color {
       color: #999;
     }
   }
