@@ -13,3 +13,5 @@ _book
 .temp
 *.log
 npm-debug.*
+
+examples/pages-pro

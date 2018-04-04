@@ -13,12 +13,12 @@ export default [
         name: '色彩',
         icon: 'color',
         path: '/colors',
-        component: Loadable({ loader: () => import(`../pages-${env}/ColorPage`) })
+        component: Loadable({ loader: () => import(`../pages-${env}/Color`) })
     },
     {
         name: '按钮',
         icon: 'button',
         path: '/button',
-        component: Loadable({ loader: () => import(`../pages-${env}/ButtonPage`) })
+        component: Loadable({ loader: () => import(`../pages-${env}/Button`) })
     },
 ]
