@@ -1,6 +1,6 @@
 const { resolve } = require('path')
 const { readdirSync, statSync, readFileSync } = require('fs')
-const { rm, mkdir } = require('shelljs')
+const { rm, mkdir, sed, cat } = require('shelljs')
 
 const { copy } = require('../../examples/utils/files')
 
@@ -34,10 +34,9 @@ async function run(){
             const componentPath = `${COMPONENTS_PATH}/${item}`
             if (statSync(componentPath).isDirectory()) {
                 const demosFilesAndDir = readdirSync(`${componentPath}/demos`)
-                const pagesProComponent = readFileSync(`${PAGE_PRO_PATH}/${item}.jsx`)
-                console.log(pagesProComponent)
+                sed('-i', 'basic.md', '666666', `${PAGE_PRO_PATH}/${item}.jsx`)
                 demosFilesAndDir.map(demoFIle => {
-                    console.log(demoFIle)
+                    // console.log(demoFIle)
                 })
             }
         })
