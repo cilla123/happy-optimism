@@ -1,5 +1,5 @@
 const { resolve } = require('path')
-const { readdirSync, statSync } = require('fs')
+const { readdirSync, statSync, readFileSync } = require('fs')
 const { rm, mkdir } = require('shelljs')
 
 const { copy } = require('../../examples/utils/files')
@@ -15,29 +15,38 @@ const PAGE_PRO_PATH = `${EXAMPLES_PATH}/pages-pro`
 
 // 组件路径
 const COMPONENTS_PATH = resolve(__dirname, '../../components')
-console.log(COMPONENTS_PATH)
 
-// 1.先删除pages-pro目录，并创建pages-pro文件
-rm(PAGE_PRO_PATH)
-mkdir(PAGE_PRO_PATH)
+/**
+ * 运行
+ */
+async function run(){
+    // 1.先删除pages-pro目录，并创建pages-pro文件
+    await rm('-rf', PAGE_PRO_PATH)
+    await mkdir(PAGE_PRO_PATH)
 
-// 2.先从pages-dev拷贝到pages-pro
-copy(PAGE_DEV_PATH, PAGE_PRO_PATH)
+    // 2.先从pages-dev拷贝到pages-pro
+    await copy(PAGE_DEV_PATH, PAGE_PRO_PATH)
 
-// 2.遍历所有的组件，来插入对应的页面组件
-// try {
-//     const filesAndDir = readdirSync(COMPONENTS_PATH)    
-//     filesAndDir.map(item => {
-//         const componentPath = `${COMPONENTS_PATH}/${item}`
-//         if (statSync(componentPath).isDirectory()) {
+    // 3.遍历所有的组件，来插入对应的页面组件
+    try {
+        const filesAndDir = readdirSync(COMPONENTS_PATH)    
+        filesAndDir.map(item => {
+            const componentPath = `${COMPONENTS_PATH}/${item}`
+            if (statSync(componentPath).isDirectory()) {
+                const demosFilesAndDir = readdirSync(`${componentPath}/demos`)
+                const pagesProComponent = readFileSync(`${PAGE_PRO_PATH}/${item}.jsx`)
+                console.log(pagesProComponent)
+                demosFilesAndDir.map(demoFIle => {
+                    console.log(demoFIle)
+                })
+            }
+        })
+    } catch (error) {
+        console.error(error);
+    }
+}
 
-//             const demosFilesAndDir = readdirSync(`${componentPath}/demos`)
-            
-//         }
-//     })
-//     console.log(files)
-// } catch (error) {
-//     console.error(error);
-// }
+run()
+
 
 
